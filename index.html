@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <main>
@@ -18,8 +19,19 @@
                 <h1>Login</h1>
                 <p> Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                     <form action="login.php" method="post">
+                            <label for="name"><span class="material-symbols-outlined">
+                account_circle
+                </span></label> 
+                <input type="email" name="" id="name" placeholder="Seu e-mail" required>
+                            </p>
+                <p>
+                    <label for="pwd"><span class="material-symbols-outlined">
+                    key
+                    </span></label><input type="password" name="" id="pwd" required minlength="8" placeholder=" sua senha">
+                </p>
+                <p><input id="bot_entrar" type="submit" value="Entrar"></p>
+                <input id="bot_esqueci_pwd" type="button" value="Esqueci a senha" >
 
-                        
                     </form>
                 </p>
             </div>
